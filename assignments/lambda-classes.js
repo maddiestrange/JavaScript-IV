@@ -15,7 +15,7 @@ class Person{
 
 class Instructor extends Person{
     constructor(instructorOptions){
-        super(instructoroptions)
+        super(instructorOptions)
         this.specialty = instructorOptions.specialty;
         this.favLanguage = instructorOptions.favLanguage;
         this.catchPhrase = instructorOptions.catchPhrase;
@@ -48,7 +48,7 @@ class Student extends Person{
     }
 }
   
-class ProjectManagers extends Instructor{
+class ProjectManager extends Instructor{
     constructor(PMoptions){
         super(PMoptions)
         this.gradClassName = PMoptions.gradClassName;
@@ -58,7 +58,7 @@ class ProjectManagers extends Instructor{
         console.log(`${this.name} announces to ${channel}, @channel standy times!​​​​​`)
     }
 
-    debugsCode(student){
+    debugsCode(student, subject){
         console.log(`${this.name} debugs ${student.name}'s code on ${subject}`)
     }
 }
@@ -185,3 +185,15 @@ const dan = new Instructor({
     favLanguage: 'Java',
     catchPhrase: ":eggplant:",
 });
+
+dan.speak();
+dan.demo('Javascript');
+dan.grade(nisa, 'Javascript');
+nisa.speak();
+nisa.listsSubjects();
+nisa.PRAssignment('Javascript');
+nisa.sprintChallenge('Javascript');
+austin.speak();
+austin.standUp(Web21);
+austin.debugsCode(nisa, 'Javascript');
+
