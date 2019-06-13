@@ -94,6 +94,7 @@ const dan = new Instructor({
     previousBackground: 'High School last month',
     className: 'Web21',
     favSubjects: ['Html', 'CSS', 'JavaScript'],
+    grade: 10,
 });
     const kevin = new Student({
     name: "Kevin",
@@ -102,6 +103,7 @@ const dan = new Instructor({
     previousBackground: "Table Games Dealer",
     className: "WEB21",
     favSubjects: ['Html', 'CSS', 'JavaScript'],
+    grade: 90,
 });
     const nisa = new Student({
     name: 'Nisa',
@@ -120,6 +122,7 @@ const dan = new Instructor({
     previousBackground: "English teacher",
     className: 'Web21',
     favSubjects: ["Computer Science", "Philosophy", "English"],
+    grade: 45,
 });
 
   const marguel = new ProjectManager({
