@@ -27,7 +27,7 @@ class Instructor extends Person{
         console.log(`${student.name} receives a perfect score on ${subject}.`)
     }
     gradeChange(student){
-        student.grade = student.grade + Math.random;
+        student.grade = student.grade + Math.floor(Math.random() * 101);
         console.log(`${student.name}'s new grade is ${student.grade}.`)
     }
 }
@@ -52,15 +52,11 @@ class Student extends Person{
         console.log(`${this.name} has begun sprint challenge on ${subject}.`)
     }
     graduate(instructor){
-        if(this.grade < 70){
-            var i;
-            for (i = 0; this.grade< 70; i++){
-            return instructor.gradeChange(this);
-            }
+        var i;
+        for (i = 0; this.grade< 70; i++){
+        instructor.gradeChange(this);
         }
-        else if (this.grade > 70){
-            console.log(`${this.name} is ready to graduate!`)
-        }
+        console.log(`${this.name} is ready to graduate!`)
     }
 }
   
