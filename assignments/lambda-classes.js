@@ -8,7 +8,7 @@ class Person{
         this.location = options.location;
     }
     speak(){
-        console.log(`Hello my name is ${this.name}, I am from ${this.location}`)
+        console.log(`Hello my name is ${this.name}, I am from ${this.location}.`)
     }
 }
 
@@ -21,10 +21,10 @@ class Instructor extends Person{
         this.catchPhrase = instructorOptions.catchPhrase;
     }
     demo(subject){
-        console.log(`Today we are learning about ${subject}`)
+        console.log(`Today we are learning about ${subject}.`)
     }
     grade(student, subject){
-        console.log(`${student.name} receives a perfect score on ${subject}`)
+        console.log(`${student.name} receives a perfect score on ${subject}.`)
     }
 }
 
@@ -37,14 +37,14 @@ class Student extends Person{
     }
     listsSubjects(){
         this.favSubjects.forEach(element => {
-            console.log(this);
+            console.log(element);
         });
     }
     PRAssignment(subject){
-        console.log(`${this.name} has submitted a PR for ${subject}`)
+        console.log(`${this.name} has submitted a PR for ${subject}.`)
     }
     sprintChallenge(subject){
-        console.log(`${this.name} has begun sprint challenge on ${subject}`)
+        console.log(`${this.name} has begun sprint challenge on ${subject}.`)
     }
 }
   
@@ -59,7 +59,7 @@ class ProjectManager extends Instructor{
     }
 
     debugsCode(student, subject){
-        console.log(`${this.name} debugs ${student.name}'s code on ${subject}`)
+        console.log(`${this.name} debugs ${student.name}'s code on ${subject}.`)
     }
 }
 
