@@ -26,6 +26,10 @@ class Instructor extends Person{
     grade(student, subject){
         console.log(`${student.name} receives a perfect score on ${subject}.`)
     }
+    gradeChange(student){
+        student.grade = student.grade + Math.random;
+        console.log(`${student.name}'s new grade is ${student.grade}.`)
+    }
 }
 
 class Student extends Person{
@@ -34,6 +38,7 @@ class Student extends Person{
         this.previousBackground = studentOptions.previousBackground;
         this.className = studentOptions.className;
         this.favSubjects = studentOptions.favSubjects;
+        this.grade = studentOptions.grade;
     }
     listsSubjects(){
         this.favSubjects.forEach(element => {
@@ -45,6 +50,17 @@ class Student extends Person{
     }
     sprintChallenge(subject){
         console.log(`${this.name} has begun sprint challenge on ${subject}.`)
+    }
+    graduate(instructor){
+        if(this.grade < 70){
+            var i;
+            for (i = 0; this.grade< 70; i++){
+            return instructor.gradeChange(this);
+            }
+        }
+        else if (this.grade > 70){
+            console.log(`${this.name} is ready to graduate!`)
+        }
     }
 }
   
@@ -98,6 +114,7 @@ const dan = new Instructor({
     previousBackground: 'Debt Collector',
     className: 'Web21',
     favSubjects: ['Html', 'CSS', 'JavaScript'],
+    grade: 50,
 });
 
     const joscelyn = new Student({
@@ -201,6 +218,7 @@ console.log(nisa.className);
 nisa.listsSubjects();
 nisa.PRAssignment('Javascript');
 nisa.sprintChallenge('Javascript');
+nisa.graduate(austin);
 
 austin.speak();
 console.log(austin.gradClassName);
