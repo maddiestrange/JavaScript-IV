@@ -1,5 +1,6 @@
 // CODE here for your Lambda Classes
 
+/* Class constuctors */
 class Person{
     constructor(options){
         this.name = options.name;
@@ -35,7 +36,9 @@ class Student extends Person{
         this.favSubjects = studentOptions.favSubjects;
     }
     listsSubjects(){
-       /* * `listsSubjects` a method that logs out all of the student's favoriteSubjects one by one. */
+        this.favSubjects.forEach(element => {
+            console.log(this);
+        });
     }
     PRAssignment(subject){
         console.log(`${student.name} has submitted a PR for ${subject}`)
@@ -59,6 +62,9 @@ class ProjectManagers extends Instructor{
         console.log(`${this.name} debugs ${student.name}'s code on ${subject}`)
     }
 }
+
+
+/* Objects */
 
 const dan = new Instructor({
     name: 'Dan',
