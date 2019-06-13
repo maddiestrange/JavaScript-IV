@@ -187,13 +187,30 @@ const dan = new Instructor({
 });
 
 dan.speak();
+console.log(dan.age)
+console.log(dan.specialty);
+console.log(dan.favLanguage);
+console.log(dan.catchPhrase);
 dan.demo('Javascript');
 dan.grade(nisa, 'Javascript');
+
 nisa.speak();
+console.log(nisa.age);
+console.log(nisa.previousBackground);
+console.log(nisa.className);
 nisa.listsSubjects();
 nisa.PRAssignment('Javascript');
 nisa.sprintChallenge('Javascript');
+
 austin.speak();
+console.log(austin.gradClassName);
+console.log(austin.favInstructor);
+console.log(austin.age);
+console.log(austin.specialty);
+console.log(austin.favLanguage);
+console.log(austin.catchPhrase);
+austin.demo('Javascript');
+austin.grade(nisa, 'Javascript')
 austin.standUp('Web21');
 austin.debugsCode(nisa, 'Javascript');
 
