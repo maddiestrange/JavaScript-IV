@@ -41,10 +41,10 @@ class Student extends Person{
         });
     }
     PRAssignment(subject){
-        console.log(`${student.name} has submitted a PR for ${subject}`)
+        console.log(`${this.name} has submitted a PR for ${subject}`)
     }
     sprintChallenge(subject){
-        console.log(`${student.name} has begun sprint challenge on ${subject}`)
+        console.log(`${this.name} has begun sprint challenge on ${subject}`)
     }
 }
   
