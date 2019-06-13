@@ -194,6 +194,6 @@ nisa.listsSubjects();
 nisa.PRAssignment('Javascript');
 nisa.sprintChallenge('Javascript');
 austin.speak();
-austin.standUp(Web21);
+austin.standUp('Web21');
 austin.debugsCode(nisa, 'Javascript');
 
