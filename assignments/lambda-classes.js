@@ -35,7 +35,7 @@ class Student extends Person{
         this.favSubjects = studentOptions.favSubjects;
     }
     listsSubjects(){
-        * `listsSubjects` a method that logs out all of the student's favoriteSubjects one by one.
+       /* * `listsSubjects` a method that logs out all of the student's favoriteSubjects one by one. */
     }
     PRAssignment(subject){
         console.log(`${student.name} has submitted a PR for ${subject}`)
@@ -52,7 +52,7 @@ class ProjectManagers extends Instructor{
         this.favInstructor = PMoptions.favInstructor;
     }
     standUp(channel){
-        console.log(`${this.name} announces to ${channel}, @channel standy times!​​​​​)
+        console.log(`${this.name} announces to ${channel}, @channel standy times!​​​​​`)
     }
 
     debugsCode(student){
